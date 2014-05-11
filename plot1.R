@@ -3,12 +3,11 @@ plot1 <- function(){
   x <- as.numeric(data[,"Global_active_power"])
   png(file="plot1.png",width=480,height=480)
   hist(x, col="red", breaks=12, main="Global Active Power", xlab="Global Active Power (kilowatts)")
-  #dev.copy(device=png, file="plot1.png", width)
   dev.off()
 }
 
 readData <- function(){
-  data <- read.csv(file="C:/Users/CSP/Desktop/coursera/expl_data_an/ass1/CourseProject1/exdata/household_power_consumption.TXT"
+  data <- read.csv(file="household_power_consumption.TXT"
                    #, header = TRUE
                    , sep=";"
                    , skip = 66636
