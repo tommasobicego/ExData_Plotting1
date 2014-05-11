@@ -17,7 +17,7 @@ plot3 <- function(){
 }
 
 readData <- function(){
-  data <- read.csv(file="C:/Users/CSP/Desktop/coursera/expl_data_an/ass1/CourseProject1/exdata/household_power_consumption.TXT"
+  data <- read.csv(file="household_power_consumption.TXT"
                    #, header = TRUE
                    , sep=";"
                    , skip = 66636
